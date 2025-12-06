@@ -1,0 +1,171 @@
+{
+  "start": "1",
+  "nodes": {
+    "1": {
+      "text": "You reach a dainty village. Though it is clean and beautiful you feel an unease among the villagers as they go about their daily affairs. Wanting to know more, you explore the village square. As you were about to ask a merchant setting up her shop, you notice a man with a thick leather apron running towards you. He catches his breath in between while asking, \"Good sir, you look like an adventurer are you by chance one?",
+      "options": [
+        {
+          "text": "\"Yes I am, can I help you with something?\"",
+          "target": "2",
+          "action": null,
+          "fail_target": null,
+          "requires": {},
+          "threshold": 4
+        }
+      ]
+    },
+    "2": {
+      "text": "\"Oh thank heavens!\", the mystery man replied. \n\n\"You see, I am the village's blacksmith and our village has recently been terrorized by Red Goblins. Unfortunately just yesterday my apprentice is the unfortunate victim of the Red Goblin's kidnapping,\" the blacksmith continued.\n\nThe blacksmith took out a pouch filled with coins and offers it to you. \"This is half, save my apprentice and you will receive the rest.\"",
+      "options": [
+        {
+          "text": "Accept Quest",
+          "target": "3",
+          "action": null,
+          "fail_target": null,
+          "requires": {},
+          "threshold": 4
+        }
+      ]
+    },
+    "3": {
+      "text": "You take the pouch. The blacksmith then takes out a map and hands it to you.\n\n\"The Red Goblin King dropped a note with this map after kidnapping my apprentice. The are demanding The Iron Crown to trade for him,\" The blacksmith explained.\n\nPointing at a part of the map with an X marked on it he continued. \"This Iron Crown is kept in a burial mound deep in the Old Barrow Woods but its controlled by the Bone Goblins so do be careful.\"",
+      "options": [
+        {
+          "text": "\"Bone Goblins?\"",
+          "target": "4",
+          "action": null,
+          "fail_target": null,
+          "requires": {},
+          "threshold": 4
+        },
+        {
+          "text": "Head to Old Barrow Woods",
+          "target": "5",
+          "action": null,
+          "fail_target": null,
+          "requires": {},
+          "threshold": 4
+        }
+      ]
+    },
+    "4": {
+      "text": "\"Undead goblins created by the Beyond Mage to roam the Old Barrow Woods and by extension protect the Iron Crown. Be really careful exploring those parts, no one knows the area better than them so try not to get spotted!\" The blacksmith explained.",
+      "options": [
+        {
+          "text": "\"Thanks for the tip\"",
+          "target": "5",
+          "action": null,
+          "fail_target": null,
+          "requires": {},
+          "threshold": 4
+        }
+      ]
+    },
+    "5": {
+      "text": "After walking for hours in the woods you discover a burial mound with an entrance half‑collapsed.  You can attempt to sneak through a narrow opening or try to force your way past the rubble.",
+      "options": [
+        {
+          "text": "Sneak inside",
+          "target": "6",
+          "action": "stealth",
+          "fail_target": "7",
+          "requires": {},
+          "threshold": 4
+        },
+        {
+          "text": "Break the rubble",
+          "target": "7",
+          "action": "strength",
+          "fail_target": "7",
+          "requires": {},
+          "threshold": 4
+        }
+      ]
+    },
+    "6": {
+      "text": "You manage to go around the burial mound undected and noticed a smaller opening that you sneak inside. There you discover a room containing ake Iron Crowns. You take one thinking that it might come in handy. The room leads to the main walkway of the mound.",
+      "options": [
+        {
+          "text": "Continue forwards",
+          "target": "7",
+          "action": null,
+          "fail_target": null,
+          "requires": {},
+          "threshold": 4
+        }
+      ]
+    },
+    "7": {
+      "text": "You enter a grand chamber where the real Iron Crown rests upon a stone pedestal.  A towering Bone Goblin Champion emerges from the shadows, barring your path.  Prepare for battle!",
+      "options": [
+        {
+          "text": "Fight the Bone Goblin Champion",
+          "target": "8",
+          "action": "combat",
+          "fail_target": "13",
+          "requires": {},
+          "threshold": 4
+        }
+      ]
+    },
+    "8": {
+      "text": "After defeating the Bone Goblin Champion you make your way to the goblin camp.  The Red Goblin King sits upon a crude throne fashioned from wagon wheels and bones.  Beside him the blacksmith’s apprentice lies bound in a makeshift cage.  Weigh your options carefully.",
+      "options": [
+        {
+          "text": "Fight the Goblin King and free the apprentice",
+          "target": "9",
+          "action": null,
+          "fail_target": null,
+          "requires": {},
+          "threshold": 4
+        },
+        {
+          "text": "Offer the Iron Crown",
+          "target": "10",
+          "action": null,
+          "fail_target": null,
+          "requires": {},
+          "threshold": 4
+        },
+        {
+          "text": "Trick him with a fake crown",
+          "target": "11",
+          "action": null,
+          "fail_target": null,
+          "requires": {
+            "sneaked": true
+          },
+          "threshold": 4
+        },
+        {
+          "text": "Challenge him to single combat",
+          "target": "12",
+          "action": "challenge",
+          "fail_target": "13",
+          "requires": {},
+          "threshold": 3
+        }
+      ]
+    },
+    "9": {
+      "text": "You slay the king, goblins scatter, boy rescued.",
+      "options": []
+    },
+    "10": {
+      "text": "You hand over the crown; Goblin King keeps his word.",
+      "options": []
+    },
+    "11": {
+      "text": "Handing over the fake crown you made earlier, the Goblin King is fooled.  His attention fixed on the counterfeit treasure, you quietly unlock the cage and help the apprentice slip away into the night.  Your stealth earlier has paid off handsomely.",
+      "options": []
+    },
+    "12": {
+      "text": "You issue a challenge to the Goblin King.  He laughs, intrigued by your audacity, and accepts.  Only a lucky swing can fell him.",
+      "options": []
+    },
+    "13": {
+      "text": "Your journey ends here.  The forces of the goblins prove too much and you are defeated.  Perhaps next time fortune will favour you.",
+      "options": []
+    }
+  }
+}
